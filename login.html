@@ -1,0 +1,178 @@
+<html>
+ <head>
+  <title>
+   Club Rétro
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 800px;
+            max-width: 100%;
+        }
+        .left {
+            background-color: #f0fdfd;
+            padding: 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .left img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .left h2 {
+            color: #00bfa6;
+            margin: 20px 0 10px;
+        }
+        .left p {
+            color: #666666;
+            text-align: center;
+        }
+        .right {
+            background-color: #00bfa6;
+            padding: 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .right h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            background-color: #ffffff;
+        }
+        .form-group .icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #00bfa6;
+        }
+        .form-group .password-icon {
+            color: #00bfa6;
+        }
+        .form-group .forgot-password {
+            color: #ffffff;
+            text-align: right;
+            display: block;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+        .form-group .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00796b;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #004d40;
+        }
+        .form-group .create-account {
+            background-color: #ffffff;
+            color: #00bfa6;
+            margin-top: 10px;
+        }
+        .form-group .create-account:hover {
+            background-color: #e0f7f9;
+        }
+        .form-group .not-member {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="left">
+    <img alt="Illustration de personnes célébrant avec des boissons" height="300" width="300"/><h2>
+     Club Rétro
+    </h2>
+    <p>
+     Rejoignez notre communauté.
+    </p>
+   </div>
+   <div class="right">
+    <h2>
+     Restez Connecté , avec les nouvelles tendances
+    </h2>
+    <form>
+     <div class="form-group">
+      <label for="email">
+       Email
+      </label>
+      <input id="email" type="email" value="Pankaj@gmail.com"/>
+      <i class="fas fa-envelope icon">
+      </i>
+     </div>
+     <div class="form-group">
+      <label for="password">
+       Mot de passe
+      </label>
+      <input id="password" type="password" value="••••••••"/>
+      <i class="fas fa-eye password-icon">
+      </i>
+      <a class="forgot-password" href="#">
+       Mot de passe oublié ?
+      </a>
+     </div>
+     <div class="form-group">
+      <button type="submit">
+       Connexion
+      </button>
+     </div>
+     <div class="form-group">
+      <p class="not-member">
+       Vous n'êtes pas membre d'un club ?
+      </p>
+      <button class="create-account" type="button">
+       Créer un compte
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>
